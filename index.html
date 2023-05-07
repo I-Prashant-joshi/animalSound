@@ -1,0 +1,73 @@
+<html>
+<head>
+  
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .front-wallpaper{
+            position: relative;
+            height:100vh;
+            max-height: 720px;
+            background-image: url(resource/img/animal.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bbtn{
+            
+            position: absolute;
+            text-align: center;
+            border:2px solid black;
+            height: 30px;
+            width: 120px;
+            line-height:30px;
+            border-radius: 20px;
+            font-size: 18px;
+            color: aliceblue;
+             
+/*            transform: translate(-50%,-50%);*/
+            top:92%;
+            left:45%;
+           
+     
+
+        }
+        .bbtn::before{
+            content: " ";
+            position: absolute;
+            z-index:-1;
+            display:block;
+            height: 0px;
+            background-color: black;
+            width:0px;
+            border-radius: 20px;
+           transition: width 0.9s ; 
+        }
+        .bbtn:hover::before{
+            width:100%;
+            height: 100%;
+          
+        }
+        .bbtn a{
+            text-decoration: none;
+            color: aliceblue
+        }
+   
+    </style>
+         <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    
+    
+    <section class="front-wallpaper">
+        <div class="bbtn animate__animated animate__heartBeat animate__infinite	infinite animate__slow 5s"><a href="main.html" target="_self">Lets Go Inside</a></div>
+    </section>
+</body>
+    
+    
+</html>
